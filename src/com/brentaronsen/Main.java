@@ -1,15 +1,32 @@
 package com.brentaronsen;
 
 import com.brentaronsen.section5ControlFlow.Exercises;
+import com.brentaronsen.section5ControlFlow.Section5Main;
 
 public class Main {
 
     public static void main(String[] args) {
 
+        //Exercise 25
+        System.out.println(Exercises.getLargestPrime(16));
+        System.out.println(Exercises.getLargestPrime(21));
+        System.out.println(Exercises.getLargestPrime(217));
+        System.out.println(Exercises.getLargestPrime(0));
+        System.out.println(Exercises.getLargestPrime(45));
+        System.out.println(Exercises.getLargestPrime(-1));
 
+        // Exercise 24
+//        System.out.println(Exercises.canPack(1, 0, 4));
+//        System.out.println(Exercises.canPack(1, 0, 5));
+//        System.out.println(Exercises.canPack(0, 5, 4));
+//        System.out.println(Exercises.canPack(2, 2, 11));
+
+        // Exercise 22
+//        System.out.println(Exercises.isPerfectNumber(28));
+//        System.out.println(Exercises.isPerfectNumber(5));
 
         // Exercise 21
-        Exercises.printFactors(32);
+//        Exercises.printFactors(32);
 
         // Exercise 20
 //        System.out.println(Exercises.getGreatestCommonDivisor(25, 15));
@@ -102,75 +119,10 @@ public class Main {
 //        SpeedConverter.printConversion(10.25);
 
 
-        // Lecture stuff SECTION 5
-//        findPrimes(3, 20, 90);
+        //LECTURES
 
-//        System.out.println("10,000 at 2% interest = " + calculateInterest(10000.0, 2.0));
-//        System.out.println("10,000 at 3% interest = " + calculateInterest(10000.0, 3.0));
-//
-//        for(int i=2; i<9; i++) {
-//            System.out.println("10,000 at " + i + "% interest = " + String.format("%.2f", calculateInterest(10000.0, i)));
-//        }
-//
-//        DayOfTheWeek.printDayOfTheWeek(2);
-//
-//        char letter = 'F';
-//
-//        switch(letter) {
-//
-//            case 'A': case 'B': case 'C': case 'D': case 'E':
-//                System.out.println("Found A, B, C, D, or E (specifically: " + letter + ")");
-//                break;
-//            default:
-//                System.out.println("Not found.");
-//        }
-//        int switchValue = 4;
-//
-//        switch(switchValue) {
-//            case 1:
-//                System.out.println("Value was 1");
-//                break;
-//
-//            case 2:
-//                System.out.println("Value was 2");
-//                break;
-//
-//            case 3: case 4: case 5:
-//                System.out.println("was a 3, 4, or 5");
-//                System.out.println("Actually it was " + switchValue);
-//                break;
-//
-//            default:
-//                System.out.println("Was not 1 or 2");
-//                break;
-//
-//        }
-
+        // Section5Main.section5Main();
     }
 
-    public static void findPrimes(int primesToFind, int lowerBound, int upperBound) {
-        for(int i=lowerBound; i <= upperBound && primesToFind > 0; i++) {
-            if(isPrime(i)) {
-                System.out.println(i);
-                primesToFind--;
-            }
-        }
-    }
 
-    public static boolean isPrime(int n) {
-        if(n==1) {
-            return false;
-        }
-
-        for(int i=2; i <= n/2; i++) {
-            if(n % i == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    public static double calculateInterest(double amount, double interestRate) {
-        return(amount * (interestRate/100));
-    }
 }
