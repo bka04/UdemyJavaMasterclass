@@ -5,6 +5,12 @@ public class Section6Main {
     public static void section6Main() {
 
 
+        Animal animal = new Animal("Animal", 1, 1, 5, 5);
+        Dog dog = new Dog("Yorkie", 8, 20, 2, 4, 1, 20, "long silky");
+        dog.eat();
+        dog.walk();
+        dog.run();
+
         //Exercise 34: Complex operations
 //        ComplexNumber one = new ComplexNumber(1.0, 1.0);
 //        ComplexNumber number = new ComplexNumber(2.5, -1.5);
