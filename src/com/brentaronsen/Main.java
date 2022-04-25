@@ -1,7 +1,6 @@
 package com.brentaronsen;
 
-import com.brentaronsen.section5ControlFlow.Section5Main;
-import com.brentaronsen.section6OOP1.Section6Main;
+import com.brentaronsen.section7OOP2.Section7Main;
 
 public class Main {
 
@@ -11,8 +10,8 @@ public class Main {
 
         //LECTURES
         //Section5Main.section5Main();
-        Section6Main.section6Main();
-
+        //Section6Main.section6Main();
+        Section7Main.section7Main();
     }
 
 
