@@ -1,5 +1,6 @@
 package com.brentaronsen;
 
+import com.brentaronsen.section8ArraysLists.Section8Main;
 import com.brentaronsen.section9InnerAbstractInterfaces.LinkedListMain;
 import com.brentaronsen.section9InnerAbstractInterfaces.Section9Main;
 
@@ -13,8 +14,9 @@ public class Main {
         //Section5Main.section5Main();
         //Section6Main.section6Main();
         //Section7Main.section7Main();
+        Section8Main.section8Main();
         //Section9Main.section9Main();
-        LinkedListMain.main(args);
+        //LinkedListMain.main(args);
     }
 
 
